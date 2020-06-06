@@ -2,19 +2,19 @@
 :root {
     --first:  #2a52be; 
     --second: #659CEF;
-    --third: #696969;
-    --shadow: 0 1px 5px rgba(104,104,104, 0.75);
+    --third: #000000;
+    --shadow: 0 1px 5px rgba(44, 23, 23, 0.8);
 }
 
 html {
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--third);
+    color: #000000;
 }
 body {
-    background-color: darkcyan;
-    margin: 20px 50px;
-    line-height: 1.5;
+    background-color: var(--first);
+    margin: 30px 50px;
+    line-height: 1.4;
 }
   /*Scalable for all devices*/ 
 img {
@@ -24,7 +24,6 @@ img {
 .wrapper{
     display: grid;
     grid-gap: 20 px;
-
 }
 
 /* Navigation*/
@@ -40,7 +39,7 @@ img {
     background: var(--first);
     display: block;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.8rem;
     text-align: center;
     color: var(--third);
     text-transform: uppercase;
@@ -53,31 +52,37 @@ img {
     color: var(--first);
 }
 
-.top-box-a, .top-box-b {
+.top-container {
     display: grid;
     grid-gap: 20px;
-    grid-template-areas:
-     'hero hero top-box-a'
-     'hero hero top-box-b';
+    grid-template-areas: 
+    'hero hero-top-box-a'
+    'hero hero-top-box-b';
 }
+
 .hero {
     grid-area: hero;
-    min-height: 500px;
+    min-height: 400px;
     background: url(../challenge2/purple-fade-facebook-cover-timeline-banner-for-fb.jpg);
     background-size: cover;
     background-position: center;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     box-shadow: var(--shadow);
 }
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    color: var(--third);
+}
 
 .hero p {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 0;
-    color: var(--second);
+    color: var(--third);
 }
 
 .top-box{
@@ -89,22 +94,43 @@ img {
     padding: 1.5rem;
 }
 .top-box-a {
-    grid-area: hero-box-a;
+    grid-area: top-box-a;
 }
 .top-box-b {
-    grid-area: hero-box-b;
+    grid-area: top-box-b;
 }
 
 .boxes {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 
 .box {
-    background-color: var(--second);
+    background-color: var(--third);
     text-align: center;
     padding: 1.5 rem 2rem;
     box-shadow: var(--shadow);
 }
+
+.more-work {
+    background: var(--second);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+}
+footer {
+    margin-top: 2rem;
+    background: darkcyan;
+    color: var(--third);
+    text-align: center;
+    padding:  1rem;
+}
+
+.uni {
+  font-size: 2.5rem;  
+}
+
 

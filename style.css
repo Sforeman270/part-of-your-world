@@ -16,12 +16,12 @@ body {
     margin: 30px 50px;
     line-height: 1.4;
 }
-  /*Scalable for all devices*/ 
+  
 img {
    max-width: 100%; 
 }
-
-.wrapper{
+/* wraps entire site*/
+.wrapper {
     display: grid;
     grid-gap: 20 px;
 }
@@ -36,7 +36,7 @@ img {
 }
 
 .header-nav a{
-    background: var(--first);
+    background: darkcyan;
     display: block;
     text-decoration: none;
     padding: 0.8rem;
@@ -56,21 +56,22 @@ img {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
-    'hero hero-top-box-a'
-    'hero hero-top-box-b';
+    'hero hero-box-a'
+    'hero hero-box-b';
 }
+ /*   Hero */
 
 .hero {
     grid-area: hero;
     min-height: 400px;
-    background: url(../challenge2/purple-fade-facebook-cover-timeline-banner-for-fb.jpg);
+    background: url("background.jpeg");
     background-size: cover;
     background-position: center;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: fill;
     box-shadow: var(--shadow);
 }
 .hero h1 {
@@ -81,7 +82,8 @@ img {
 
 .hero p {
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 50;
     color: var(--third);
 }
 
@@ -93,12 +95,16 @@ img {
     box-shadow: var(--shadow);
     padding: 1.5rem;
 }
+
+
 .top-box-a {
     grid-area: top-box-a;
 }
+
 .top-box-b {
     grid-area: top-box-b;
 }
+
 
 .boxes {
     display: grid;
@@ -106,12 +112,14 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 
+
 .box {
     background-color: var(--third);
     text-align: center;
     padding: 1.5 rem 2rem;
     box-shadow: var(--shadow);
 }
+
 
 .more-work {
     background: var(--second);
@@ -121,6 +129,7 @@ img {
     grid-template-columns: repeat(2,1fr);
     padding: 3rem;
 }
+
 footer {
     margin-top: 2rem;
     background: darkcyan;
@@ -128,6 +137,7 @@ footer {
     text-align: center;
     padding:  1rem;
 }
+
 
 .uni {
   font-size: 2.5rem;  

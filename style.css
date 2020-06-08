@@ -52,6 +52,7 @@ img {
     color: var(--first);
 }
 
+/* hero section */
 .top-container {
     display: grid;
     grid-gap: 20px;
@@ -59,7 +60,7 @@ img {
     'hero hero-box-a'
     'hero hero-box-b';
 }
- /*   Hero */
+ 
 
 .hero {
     grid-area: hero;
@@ -112,6 +113,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 
+/* Easier for now to assign names to boxes */
 
 .box {
     background-color: var(--third);
@@ -128,6 +130,7 @@ img {
     grid-gap: 30px;
     grid-template-columns: repeat(2,1fr);
     padding: 3rem;
+    font-size: 2rem;
 }
 
 footer {
@@ -136,6 +139,7 @@ footer {
     color: var(--third);
     text-align: center;
     padding:  1rem;
+    font-size: 3rem;
 }
 
 

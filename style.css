@@ -150,27 +150,24 @@ footer {
 /* Mediaqueries */
 
 @media(max-width: 980px) {
-    .top-container {
-        grid-template-areas:
-        'hero hero'
-        'hero-box-a hero-box-b';
-    }
+    
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hero-nav ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     .more-work {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     @media(max-width: 780px) {
         .top-container {
             grid-template-areas:
-            'hero hero'
+            'hero'
+            'hero'
             'hero-box-a'
             'hero-box-b';
         }
@@ -185,6 +182,8 @@ footer {
         .more-work {
             grid-template-columns: 1fr;
         }
+
+    }
     
 @media(max-width: 500px) {
     .top-container {
@@ -195,7 +194,7 @@ footer {
         'hero-box-b';
     }
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero-nav ul {
@@ -206,7 +205,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    
-    
-    
 
+}
+}

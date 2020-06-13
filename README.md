@@ -22,8 +22,8 @@ https://sforeman270.github.io/part-of-your-world/
 
 ## Installation<br>
 -Clone the <>
--Change the project directory and open index.html in the browser<br>
--You will be navigateed to the homepage with all of the relative information<br>
+-Change the project directory and open index.html in the browser.<br>
+-You will be navigated to the homepage with all of the relative information.<br>
 
 
 
